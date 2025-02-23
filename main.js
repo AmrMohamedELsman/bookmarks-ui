@@ -146,6 +146,7 @@ async function filterBookmarksByCategory(category) {
 }
 
 // ✅ حذف إشارة مرجعية
+window.deleteBookmark = deleteBookmark;
 async function deleteBookmark(id) {
     try {
         await remove(ref(db, `bookmarks/${id}`));
